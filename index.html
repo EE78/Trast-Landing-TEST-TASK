@@ -14,7 +14,7 @@
   <header>
     <img class="header__logo" src="img/logo.svg" alt="logo">
     <ul class="header__list">
-      <li>Каталог недвижимости</li>
+      <li id="test" onclick="myFunction()">Каталог недвижимости</li>
       <li>Ипотека</li>
       <li>О нас</li>
       <li>Карьера</li>
@@ -24,6 +24,30 @@
     </ul>
     <button class="header__button">Офисы и контакты</button>
   </header>
+  <div id="asd" class="header__catalog">
+    <div class="catalog__flat-type">
+      <p>Все квартиры</p>
+      <p>Квартиры в новостройке</p>
+      <p>Квартиры во вторичке</p>
+      <p>Акции и скидки</p>
+    </div>
+    <div class="catalog__rooms-counter">
+      <p>Квартиры студии</p>
+      <p>1-комнатные квартиры</p>
+      <p>2-комнатные квартиры</p>
+      <p>3-комнатные квартиры</p>
+      <p>4-комнатные квартиры</p>
+      <p>Квартиры в Воронеже</p>
+    </div>
+    <div class="catalog__flats-geo">
+      <p>Квартиры на правом берегу</p>
+      <p>Квартиры на левом берегу</p>
+      <p>Квартиры в Железнодорожном р-не</p>
+      <p>Квартиры в Советском р-не</p>
+      <p>Квартиры в Ленинском р-не</p>
+      <p>Квартиры в Коминтерновском р-не</p>
+    </div>
+  </div>
   <main>
     <div class="main-screen">
       <div class="main-screen__title">
@@ -36,16 +60,31 @@
       </div>
       <div class="main-screen__filters">
         <select class="filters__flat-type">
+          <option>
+            <h1>Жилая</h1>
+          </option>
+          <option>Коммерческая</option>
           <option>Квартира в новостройке</option>
-          <option>Квартира в новосе</option>
-          <option>Квартира в носе</option>
-          <option>Квартира в ноsе</option>
+          <option>Квартира во вторичке</option>
+          <option>Комната</option>
+          <option>Доля</option>
+          <option>Дом или дача</option>
+          <option>Часть дома</option>
+          <option>Таунхаус</option>
+          <option>Участок</option>
         </select>
         <select class="filters__room-counter">
           <option>Комнатность</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5+</option>
+          <option>Студия</option>
+          <option>Свободная планировка</option>
         </select>
         <input class="filters__price" type="text" placeholder="Цена">
-        <input class="filters__area" type="text" placeholder="Район">
+        <input class="filters__area" type="text" placeholder="Район, дом, улица или ЖК">
         <button>Поиск</button>
       </div>
       <div class="main-screen__features">
@@ -129,10 +168,9 @@
     </footer>
     <div class="footer__copyrigth">
       <p>©2000-2022 Компания «Траст». Все права защищены. При использовании материалов гиперссылка обязательна.</p>
-   <img src="img/vklogo.svg" alt="VK">
+      <img src="img/vklogo.svg" alt="VK">
     </div>
-
   </main>
-
+  <script src="script.js"></script>
 
 </body>

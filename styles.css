@@ -24,6 +24,7 @@ header {
   padding: 25px 60px 25px 60px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid gray;
 }
 
 .header__list {
@@ -61,6 +62,38 @@ header {
 
 .header__button:hover {
   opacity: 0.75;
+}
+
+.header__catalog {
+  display: flex;
+  padding: 60px;
+}
+
+.catalog__flat-type {
+  margin-right: 62px;
+}
+
+.catalog__flat-type p {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+}
+
+.catalog__rooms-counter {
+  margin-right: 80px;
+}
+
+.catalog__rooms-counter p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #171717;
+}
+
+.catalog__flats-geo p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #000000;
 }
 
 .main-screen {
@@ -350,11 +383,11 @@ footer {
   list-style: none;
 }
 
-.footer__list li{
+.footer__list li {
   cursor: pointer;
 }
 
-.footer__list li:hover{
+.footer__list li:hover {
   opacity: 0.75;
 }
 
@@ -371,7 +404,7 @@ footer {
   cursor: pointer;
 }
 
-.footer__button:hover{
+.footer__button:hover {
   opacity: 0.75;
 }
 
@@ -386,11 +419,11 @@ footer {
   color: #B3B3B3;
 }
 
-.footer__copyrigth img{
+.footer__copyrigth img {
   cursor: pointer;
 }
 
-.footer__copyrigth img:hover{
+.footer__copyrigth img:hover {
   opacity: 0.75;
 }
 
