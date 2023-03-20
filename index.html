@@ -25,45 +25,111 @@
     <button class="header__button">Офисы и контакты</button>
   </header>
   <main>
-    <div class="main-screen__background"></div>
-    <div class="main-screen__title">
-      <h1>Сотрудничество <br>
-        начинается с доверия</h1>
-      <p>«Траст» входит в состав Российской Гильдии Риэлторов. <br>Стандарты качества услуг компании сертифицированы,
-        <br>
-        деятельность застрахована.
-      </p>
+    <div class="main-screen">
+      <div class="main-screen__title">
+        <h1>Сотрудничество <br>
+          начинается с доверия</h1>
+        <p>«Траст» входит в состав Российской Гильдии Риэлторов. <br>Стандарты качества услуг компании сертифицированы,
+          <br>
+          деятельность застрахована.
+        </p>
+      </div>
+      <div class="main-screen__filters">
+        <select class="filters__flat-type">
+          <option>Квартира в новостройке</option>
+          <option>Квартира в новосе</option>
+          <option>Квартира в носе</option>
+          <option>Квартира в ноsе</option>
+        </select>
+        <select class="filters__room-counter">
+          <option>Комнатность</option>
+        </select>
+        <input class="filters__price" type="text" placeholder="Цена">
+        <input class="filters__area" type="text" placeholder="Район">
+        <button>Поиск</button>
+      </div>
+      <div class="main-screen__features">
+        <div class="features__left-item">
+          <div class="item__main-content">
+            <div class="main-content__text">
+              <h1>Ипотека онлайн</h1>
+              <p>Поможем получить одобрение банков,<br> чтобы вы могли</p>
+              <img class="text__arrow" src="img/arrow.svg" alt="arrow">
+            </div>
+            <img class="item__pic" src="img/leftItem.svg" alt="check">
+          </div>
+        </div>
+        <div class="features__mid-item">
+          <div class="item__main-content">
+            <div class="main-content__text">
+              <h1>Поменяем на новую</h1>
+              <p>Поможем получить одобрение банков,<br> чтобы вы могли</p>
+              <img class="text__arrow" src="img/arrow.svg" alt="arrow">
+            </div>
+            <img class="item__pic" src="img/midItem.svg" alt="check">
+          </div>
+        </div>
+        <div class="features__rigth-item">
+          <div class="item__main-content">
+            <div class="main-content__text">
+              <h1>Оценка стоимости</h1>
+              <p>Поможем получить одобрение банков,<br> чтобы вы могли</p>
+              <img class="text__arrow" src="img/arrow.svg" alt="arrow">
+            </div>
+            <img class="item__pic" src="img/rigthItem.svg" alt="check">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="main-screen__filters">
-      <select class="filters__flat-type">
-        <option>Квартира в новостройке</option>
-        <option>Квартира в новосе</option>
-        <option>Квартира в носе</option>
-        <option>Квартира в ноsе</option>
-      </select>
-      <select class="filters__room-counter">
-        <option>Комнатность</option>
-      </select>
-      <input class="filters__price" type="text" placeholder="Цена">
-      <input class="filters__area" type="text" placeholder="Район">
-      <button>Поиск</button>
+    <div class="main-screen__slider">
+      <div class="slider__text-content">
+        <div class="text-content__title">
+          <h1>Эксклюзивные варианты</h1>
+          <p>В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь, <br>
+            войти
+            придётся самостоятельно. </p>
+        </div>
+        <button class="header__button">Все эксклюзивы</button>
+      </div>
+      <div class="slider__image">
+        <div class="image__left-text">
+          <button class="left-text__button">Кухня в подарок</button>
+          <div class="left-text__container">
+            <div class="left-text__description">
+              <h1>13 750 000 ₽</h1>
+              <h2>3-к квартира, 57м2, 12/15 эт.</h2>
+              <p>Коминтерновский район, Московский проспект,114</p>
+            </div>
+            <div class="image__buttons">
+              <span class="buttons__like"></span>
+              <button class="buttons__contacts">Показать номер</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="slider__changer">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
-    <div class="main-screen__features">
-      <div class="features__left-item">
-        <h1>Ипотека онлайн</h1>
-        <p>Поможем получить одобрение банков,<br> чтобы вы могли</p>
-        <img src="img/arrow.svg" alt="arrow">
-      </div>
-      <div class="features__mid-item">
-        <h1>Поменяем на новую</h1>
-        <p>Поможем получить одобрение банков,<br> чтобы вы могли</p>
-        <img src="img/arrow.svg" alt="arrow">
-      </div>
-      <div class="features__rigth-item">
-        <h1>Оценка стоимости</h1>
-        <p>Поможем получить одобрение банков,<br> чтобы вы могли</p>
-        <img src="img/arrow.svg" alt="arrow">
-      </div>
+    <footer> <img class="header__logo" src="img/footerLogo.svg" alt="logo">
+      <ul class="footer__list">
+        <li>Каталог недвижимости</li>
+        <li>Ипотека</li>
+        <li>О нас</li>
+        <li>Карьера</li>
+        <li>Отзывы</li>
+        <li>Вакансии</li>
+        <li>Прочее</li>
+      </ul>
+      <button class="footer__button">Офисы и контакты</button>
+    </footer>
+    <div class="footer__copyrigth">
+      <p>©2000-2022 Компания «Траст». Все права защищены. При использовании материалов гиперссылка обязательна.</p>
+   <img src="img/vklogo.svg" alt="VK">
     </div>
 
   </main>
