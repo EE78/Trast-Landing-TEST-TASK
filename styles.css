@@ -65,8 +65,26 @@ header {
 }
 
 .header__catalog {
-  display: flex;
+  display: none;
   padding: 60px;
+  position: absolute;
+  z-index: 5;
+  background-color: #FFFFFF;
+  width: 100%;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .catalog__flat-type {
@@ -148,10 +166,12 @@ header {
   padding: 24px;
   border: 0;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .main-screen__filters select:hover {
   opacity: 0.75;
+  box-shadow: 0 0 20px #DC1919;
 }
 
 .main-screen__filters input {
@@ -159,10 +179,12 @@ header {
   border: 0;
   outline: none;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .main-screen__filters input:hover {
   opacity: 0.75;
+  box-shadow: 0 0 20px #DC1919;
 }
 
 .main-screen__features {
@@ -179,6 +201,7 @@ header {
 
 .features__left-item:hover {
   opacity: 0.9;
+  box-shadow: 0 0 20px #C71E1E;
 }
 
 .item__main-content {
@@ -218,6 +241,7 @@ header {
 
 .features__mid-item:hover {
   opacity: 0.9;
+  box-shadow: 0 0 20px #3E3E3E;
 }
 
 .features__rigth-item {
@@ -228,6 +252,7 @@ header {
 
 .features__rigth-item:hover {
   opacity: 0.9;
+  box-shadow: 0 0 20px #416494;
 }
 
 .main-screen__slider {
@@ -355,8 +380,11 @@ header {
   margin-left: 15px;
 }
 
+.slider__changer li:active {
+  background: red;
+}
+
 .slider__changer li:first-child {
-  background-color: #C71E1E;
   margin-left: 0;
 }
 
