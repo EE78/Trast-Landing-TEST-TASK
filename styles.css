@@ -197,6 +197,7 @@ header {
   background: #C71E1E;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
 }
 
 .features__left-item:hover {
@@ -206,6 +207,9 @@ header {
 
 .item__main-content {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .main-content__text {
@@ -237,6 +241,7 @@ header {
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
+  width: 100%;
 }
 
 .features__mid-item:hover {
@@ -248,6 +253,7 @@ header {
   background: #416494;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
 }
 
 .features__rigth-item:hover {
@@ -255,111 +261,88 @@ header {
   box-shadow: 0 0 20px #416494;
 }
 
-.main-screen__slider {
-  padding: 50px;
+.main-screen__slides {
+  padding: 55px;
 }
 
-.slider__text-content {
+.slides__title {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
-.slider__image {
-  background-image: url(img/slide1.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+.slides__image {
   width: 100%;
-  height: 100vh;
-  padding: 35px 60px 60px 60px;
-}
-
-.image__left-text {
+  height: 75vh;
+  background-image: url(img/slide1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 42px;
+  margin-top: 52px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  width: 100%;
 }
 
-.left-text__button {
+.image__label {
   background: rgba(30, 30, 30, 0.7);
   border-radius: 4px;
-  padding: 10px 15px;
-  font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   color: #F5F5F5;
+  padding: 10px 20px 10px 20px;
+  outline: none;
   border: 0;
+  text-align: center;
   width: 150px;
   height: 50px;
+}
+
+.text__button {
+  padding: 10px 19px 15px 19px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #DC1919;
+  background: none;
+  border: 1px solid #DC1919;
+  border-radius: 4px;
+  text-align: center;
+  width: 220px;
   cursor: pointer;
 }
 
-.left-text__button:hover {
-  opacity: 0.8;
+.image__description {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.left-text__description h1 {
-  font-weight: 600;
+.description__text h1 {
   font-size: 35px;
+  margin-bottom: 11px;
   color: #FFFFFF;
-  margin-bottom: 15px;
 }
 
-.left-text__description h2 {
+.description__text h2 {
   font-weight: 400;
   font-size: 21px;
   color: #FFFFFF;
   margin-bottom: 15px;
 }
 
-.left-text__description p {
-  font-weight: 600;
-  font-size: 14px;
-  color: #F5F5F5;
-}
-
-.buttons__like {
+.description__button{
   display: flex;
-  background-position: center;
-  border: 1px solid #FFFFFF;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-image: url(img/like.svg);
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-}
+  flex-direction: column;
+justify-content: center;}
 
-.buttons__like:hover {
-  opacity: 0.75;
-}
-
-.buttons__contacts {
+.description__button button {
+  font-size: 14px;
+  color: #FFFFFF;
   background: #DC1919;
   border-radius: 4px;
-  padding: 20px 70px 20px 70px;
-  text-align: center;
-  border: none;
-  font-weight: 600;
-  font-size: 14px;
-  color: #F5F5F5;
-  margin-left: 20px;
+  border: 0;
+  outline: none;
   cursor: pointer;
-}
-
-.buttons__contacts:hover {
-  opacity: 0.75;
-}
-
-.left-text__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.image__buttons {
-  display: flex;
+  width: 285px;
+  height: 59px;
 }
 
 .slider__changer {
