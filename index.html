@@ -121,35 +121,37 @@
       </div>
     </div>
     <div class="main-screen__slides">
-      <div class="slides__title">
-        <div class="title__text">
-          <h1>Эксклюзивные варианты</h1>
-          <h2>В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь,<br>
-            войти
-            придётся самостоятельно. </h2>
+      <div>
+        <div class="slides__title">
+          <div class="title__text">
+            <h1>Эксклюзивные варианты</h1>
+            <h2>В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь,<br>
+              войти
+              придётся самостоятельно. </h2>
+          </div>
+          <button class="text__button">Все эксклюзивы</button>
         </div>
-        <button class="text__button">Все эксклюзивы</button>
-      </div>
-      <div class="slides__image">
-        <button class="image__label">Кухня в подарок</button>
-        <div class="image__description">
-          <div class="description__text">
-            <h1>13 750 000 ₽</h1>
-            <h2>3-к квартира, 57м2, 12/15 эт.</h2>
-            <h2>
-              Коминтерновский район, Московский проспект,114</h2>
-          </div >
-          <div class="description__button">
-          <button>Показать номер</button></div>
+        <div class="slides__content">
+          <div class="content__description">
+            <button>Кухня в подарок</button>
+            <div>
+              <h1>13 750 000 ₽</h1>
+              <h2>3-к квартира, 57м2, 12/15 эт.</h2>
+              <h2>
+                Коминтерновский район, Московский проспект,114</h2>
+            </div>
+          </div>
+          <div class="content__button"><button>Показать номер</button></div>
         </div>
       </div>
+
     </div>
     <ul class="slider__changer">
-      <li id="slide1"></li>
-      <li id="slide2"></li>
-      <li id="slide3"></li>
-      <li id="slide4"></li>
-      <li id="slide5"></li>
+      <li id="changer__first-link" onclick="SetSlide1()"></li>
+      <li id="changer__second-link" onclick="SetSlide2()"></li>
+      <li id="changer__third-link" onclick="SetSlide3()"></li>
+      <li id="changer__fourth-link" onclick="SetSlide4()"></li>
+      <li id="changer__fifth-link" onclick="SetSlide5()"></li>
     </ul>
     </div>
     <footer> <img class="header__logo" src="img/footerLogo.svg" alt="logo">
@@ -169,6 +171,5 @@
       <img src="img/vklogo.svg" alt="VK">
     </div>
   </main>
-  <script src="script.js"></script>
-
+  <script src="index.js"></script>
 </body>
